@@ -6,6 +6,7 @@ require_once("vendor/autoload.php");
 // namespace para trazer as classes desejadas.
 use \Slim\Slim;
 use \Hcode\Page;
+use Hcode\PageAdmin;
 
 // definindo as rotas
 $app = new \Slim\Slim();
@@ -16,6 +17,16 @@ $app->get('/', function(){
 
 	// instancia na classe page para gerar uma nova pagina
 	$page = new Page();
+
+	//carrega o conteudo do template index. que é o arquivo HTMl principal.
+	$page->setTpl("index");
+
+});
+
+$app->get('/admin/', function(){
+
+	// instancia na classe page para gerar uma nova pagina
+	$page = new PageAdmin();
 
 	//carrega o conteudo do template index. que é o arquivo HTMl principal.
 	$page->setTpl("index");
