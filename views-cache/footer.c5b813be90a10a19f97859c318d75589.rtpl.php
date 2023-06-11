@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-about-us">
-                        <h2>Hcode Store</h2>
+                        <h2>Descontos Bom</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sunt id doloribus vero quam laborum quas alias dolores blanditiis iusto consequatur, modi aliquid eveniet eligendi iure eaque ipsam iste, pariatur omnis sint! Suscipit, debitis, quisquam. Laborum commodi veritatis magni at?</p>
                         <div class="footer-social">
                             <a href="https://www.facebook.com/hcodebr" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -24,6 +24,7 @@
                             <li><a href="#">Minha Conta</a></li>
                             <li><a href="#">Meus Pedidos</a></li>
                             <li><a href="#">Lista de Desejos</a></li>
+                            <li><a href="#">Missão, Visão e Valores</a></li>
                         </ul>                        
                     </div>
                 </div>
