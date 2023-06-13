@@ -6,6 +6,13 @@ namespace Hcode;
 // usando namespace do microframework RainTpl.
 use Rain\Tpl;
 
+
+
+ /* Esta classe cria uma nova pagina para o site já carregando automaticamente o cabeçalho no construtor
+	e o rodapé no destrutor, além de seu conteudo.
+
+ */
+	
 class Page{
 
 	private $tpl;

@@ -4,6 +4,8 @@ namespace Hcode\DB;
 
 class Sql {
 
+	//constantes de acesso ao banco de dados.
+
 	const HOSTNAME = "127.0.0.1";
 	const USERNAME = "root";
 	const PASSWORD = "root";
@@ -11,6 +13,7 @@ class Sql {
 
 	private $conn;
 
+	//construtor da classe já inicia uma conexão ao banco de dados.
 	public function __construct()
 	{
 
@@ -21,6 +24,15 @@ class Sql {
 		);
 
 	}
+
+
+	/*
+
+	As funcões abaixo são utilizadas para inserir comandos e parametros SQL no banco de dados 
+	e também inserir e retornar dados do banco.
+
+	*/
+
 
 	private function setParams($statement, $parameters = array())
 	{
@@ -51,6 +63,7 @@ class Sql {
 
 	}
 
+	//função
 	public function select($rawQuery, $params = array()):array
 	{
 

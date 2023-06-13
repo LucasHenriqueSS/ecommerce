@@ -84,6 +84,8 @@ class User extends Model{
 		return $sql->select("SELECT * FROM tb_users INNER JOIN tb_persons b USING(idperson) ORDER BY b.desperson");
 	}
 
+
+	// função que salva os dados do usuario no banco de dados utilizando PROCEDURE.
 	public function save()
 	{
 		$sql = new Sql();
@@ -102,6 +104,9 @@ class User extends Model{
 
 	}
 
+
+	// Função que ao passar um ID de usuario retorna os dados do usuario e insere no objeto.
+
 	public function get($iduser)
 	{
  
@@ -116,6 +121,9 @@ class User extends Model{
  		$this->setData($data);
  
  }
+
+
+ //Função que atualiza os dados do usuario no banco de dados.
 
  	public function update()
  	{
@@ -133,6 +141,8 @@ class User extends Model{
 
 		$this->setData($results[0]);
 	}
+
+	// Deleta um usuario do banco, através do ID.
 
 	public function delete()
 	{
